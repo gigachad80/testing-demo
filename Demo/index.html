@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Web Content Analysis</title>
+</head>
+<body>
+    <h1>AI Analysis of Web Content</h1>
+    <form method="POST" action="/">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" required><br><br>
+        <input type="submit" value="Analyze">
+    </form>
+
+    {% if result %}
+    <h2>Analysis Result:</h2>
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
